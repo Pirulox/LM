@@ -9,7 +9,8 @@ body{
 section{
     margin: 0px;
     padding: 0px;
-    display: flex;
+    display: flex; /*Dice como tiene que funcionar realmente el contenedor respecto a sus hijos, no hay que ponerlo en el hijo, sino directamente en el contenedor,
+    tenemos un contenedor flexible y organizar de manera mas eficiente a los hijos, si tiene espacio en la pantalla para poner a los hijos, los va a poner*/
     flex-flow: row;
     height: 600px;
 }
@@ -50,7 +51,8 @@ aside{
 }
 
 header, footer{
-    display: block; /*display: block: ocupar el bloque*/
+    display: block; /*display: block: ocupar el bloque, le afecta el ancho y el alto y lo pone todo de arriba a abajo, como una lectura normal, por ejemplo el inline es
+    de izquierda a derecha uno detras del otro y CREO que no le afecta el ancho y alto*/
     margin: 4px;
     background-color: #ffeebb;
     border-radius: 7px;
