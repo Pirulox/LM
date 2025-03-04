@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen 2</title>
+</head>
+<body>
+    <h1 align="center">RECETAS</h1>
+    <br><br>
+    <h1>PAELLA VALENCIANA</h1>
+    <h4>Receta elaborada de la Paella de Marisco</h4>
+    <br>
+    <img src="./Imagenes/paella.jpg" alt="paella" width="300">
+    <h4>Ingredientes</h4>
+    <ul>
+        <li>250 g de gambas</li>
+        <li>Verduras:</li>
+        <ul>
+            <li>Pimiento Rojo</li>
+            <li>Pimiento Verde</li>
+            <li>Tomates</li>
+        </ul>
+        <li>1 calamar</li>
+        <li>Langostinos</li>
+        <li>Sal</li>
+        <h4>Elaboración (Pasos)</h4>
+        <ol>
+            <li>Calentar verduras en una paellera</li>
+            <li>Añadir el calamar, la sal y aceite</li>
+            <li>Poner a fuego durante 20 minutos</li>
+            <li>Reposar en paellera</li>
+            <li>Servir en plato</li>
+        </ol>
+    </ul>
+    <iframe width="350" height="200" src="https://www.youtube.com/watch?v=a_3_0rHeFjk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <br>
+    <br><br>
+    <h1>Patatas Fritas</h1>
+    <h4>Receta de Cocido madrileño</h4>
+    <br>
+    <img src="./Imagenes/patatas.jpg" alt="patatas" width="300">
+    <h4>Ingredientes</h4>
+    <ul>
+        <li>3 o 4 patatas (300g)</li>
+        <li>4 dientes de ajo</li>
+        <li>Aceite de oliva</li>
+        <li>Sal</li>
+        <ul>
+            <li>Sal fina</li>
+            <li>Sal gorda</li>
+            <li>Sal Maldom</li>
+        </ul>
+    </ul>
+    <ul>
+        <li>1 calamar</li>
+        <li>Langostinos</li>
+        <li>Sal</li>
+        <h4>Elaboración (Pasos)</h4>
+        <ol>
+            <li>Calentar aceite en una sartén</li>
+            <li>Añadir las patatas cortadas, la sal y los ajos</li>
+            <li>Freir al gusto</li>
+            <li>Servir en plato</li>
+        </ol>
+    </ul>
+    <iframe width="350" height="200" src="https://youtu.be/9nh1zUX54pw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <p align="center">para más Información ir a <a href="www.google.es">Google</a></p>
+    <br>
+<h3 align="center">Información sobre el producto</h3>
+<fieldset>
+    <legend>Datos básicos</legend>
+    <label for="DNI">DNI</label>
+    <input type="text" name="poner_DNI" id="poner_DNI" size="20" maxlength="9" autofocus pattern="[0-9]{8}[A-Z]{1}"></input>
+    <br><br>
+    <label for="Nombre">Nombre</label>
+    <input type="text" name="poner_nombre" id="poner_nombre" size="20" autofocus></input>
+    <label for="Apellidos">Apellidos</label>
+    <input type="text" name="poner_apellido" id="poner_apellido" size="40" autofocus></input>
+    <br><br>
+    <label for="correo">Email</label>
+    <input type="text" name="poner_correo" id="poner_correo" size="20"></input>
+    <label for="contrasena">Contraseña:</label>
+    <input type="password" name="poner_contrasena" id="poner_contrasena" size="20">
+    <br><br>
+    <label for="sexo">Indique el sexo:</label>
+    <br>
+    <input type="radio" name="poner_sexo" id="poner_sexo" value="">
+    <label for="sexo">hombre</label>
+    <input type="radio" name="poner_sexo" id="poner_sexo" value="">
+    <label for="sexo">mujer</label>
+    <input type="radio" name="poner_sexo" id="poner_sexo" value="">
+    <label for="sexo">otro</label>
+    <br><br>
+    <label for="descripcion">Descripción</label>
+    <br>
+    <textarea name="opinion" id="opinion" placeholder="Escribe opiniones" rows="8" cols="40"></textarea>
+    <br><br>
+    <label for="foto">Foto</label>
+    <input type="file" name="archivo" id="archivo">
+    <br><br>
+    <label for="fecha">Fecha</label>
+    <input type="date" name="poner_fecha" id="poner_fecha">
+    <label for="hora">Hora</label>
+    <input type="time" name="poner_hora" id="poner_hora">
+    <br><br>
+    <input type="checkbox" name="contador" id="contador">
+    <label for="textocontador">Añadir contador de visitas</label>
+</fieldset>
+<fieldset>
+<legend>Datos económicos</legend>
+<label for="precio">Precio</label>
+<input type="number" min="1" max="" step="1"></input>
+<label for="euro">€</label>
+
+<label for="impuestos">Impuestos</label>
+<select name="impuestos" id="impuestos">
+    <option value="4">4%</option>
+    <option value="4">7%</option>
+    <option value="4">16%</option>
+    <option value="4">25%</option>
+</select>
+<br><br>
+<label for="ciudad">Ciudad:</label>
+<select name="Comunidades" id="Comunidades">
+    <optgroup label ="Zaragoza">Zaragoza</label>   
+        <option value="c">Centro</option>
+        <option value="p">Provincia</option>
+    </optgroup>
+    <optgroup label ="Huesca">Huesca</label>   
+        <option value="c">Centro</option>
+        <option value="p">Provincia</option>
+    </optgroup>
+    <optgroup label ="Teruel">Teruel</label>   
+        <option value="c">Centro</option>
+        <option value="p">Provincia</option>
+    </optgroup>
+</select>
+<br><br>
+    <input type="text" name="cosas" id="cosas" list="lista cosas">
+    <datalist id="lista cosas">
+        <option label="Deportes" value="Deportes">Deportes</option>
+        <option label="Mecánica" value="Mecánica">Mecánica</option>
+        <option label="Electricidad" value="Electricidad">Electricidad</option>
+        <option label="Ocio" value="Ocio">Ocio</option>
+    </datalist>
+    <br><br>
+    <label for="promo">Promoción</label>
+    <br>
+    <input type="radio" name="ninguno" id="ninguno" value="">
+    <label for="ninguno">Ninguno</label>
+    <br>
+    <input type="radio" name="transporte" id="transporte" value="">
+    <label for="transporte">Transporte gratuito</label>
+    <br>
+    <input type="radio" name="descuento" id="descuento" value="">
+    <label for="descuento">Descuento 5%</label>
+</fieldset>
+<br>
+<input type="button" name="enviar" id="enviar" value="Enviar datos">
+</body>
+</html>

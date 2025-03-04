@@ -1,0 +1,63 @@
+body{
+    margin-left: 0px;
+    margin-top: 20px;
+}
+
+header{
+    background-color: purple;
+    height: 100px;
+}
+header h1{
+    text-align: center;
+    color: white;
+    margin: 0px;
+    padding-top: 30px;
+}
+
+button{
+    margin: 5px;
+    font-size: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+section{
+    display: flex;
+    flex-flow: row; 
+}
+section article{
+    background-color: aqua;
+    padding: 10px;
+    margin: 10px;
+    flex: 3 1 200px;
+}
+
+#desplega{
+    flex: 3 1 200px;
+    display: flex;
+    flex-flow: column;
+}
+
+#uno{
+    display: flex;
+    flex: 1 1 100px;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+button{
+    flex: 1 1 100px;
+    margin: 5px;
+    font-size: 10px;
+    padding: 5px;
+}
+
+@media screen and (max-width: 800px){
+    header h1{
+        color: rgb(123, 240, 102);
+    }
+    section{
+        flex-flow: column; 
+    }
+}

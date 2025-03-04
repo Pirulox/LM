@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios 2</title>
+</head>
+<body>
+    <fieldset>
+    <legend>Formulario de opciones</legend>
+    <input type="radio" name="lenguaje" id="lenguaje" value="lenguajejava">
+    <label for="lenguajejava">Java</label>
+    <br>
+    <input type="radio" name="lenguaje" id="lenguaje" value="lenguajepython">
+    <label for="lenguajepython">Python</label>
+    <br>
+    <input type="radio" name="lenguaje" id="lenguaje" value="lenguajehtml">
+    <label for="lenguajehtml">HTML</label>
+    <br>
+    <input type="radio" name="lenguaje" id="lenguaje" value="lenguajevisual_basic">
+    <label for="lenguajevisual_basic">Visual Basic</label>
+    <br>
+    <input type="radio" name="lenguaje" id="lenguaje" value="lenguajecss">
+    <label for="lenguajecss">CSS</label>
+    <br><br>
+    <input type="checkbox" name="conector" id="conector" value="conectorusb">
+    <label for="conectorusb">USB</label>
+    <input type="checkbox" name="conector" id="conector" value="conectorparalelo">
+    <label for="conectorparalelo">Paralelo</label>
+    <input type="checkbox" name="conector" id="conector" value="conectorps2">
+    <label for="conectorps2">PS2</label>
+    <br>
+    <select name="lenguaje" id="lenguaje">
+        <option value="Java">Java</option>
+        <option value="Python">Python</option>
+        <option value="HTML">HTML</option>
+        <option value="Visual_Basic">Visual Basic</option>
+        <option value="CSS">CSS</option>
+    </select>
+    <br>
+    <label for="archivo">Elija un fichero:</label>
+    <input type="file" name="elegir_archivo" id="elegir_archivo">
+    <br>
+    <label for="fecha">Elija una fecha:</label>
+    <input type="date" name="elegit_fecha" id="elegir_fecha">
+    <br>
+    <label for="DNI">DNI</label>
+    <input type="text" name="poner_DNI" id="poner_DNI" size="20" maxlength="9" autofocus pattern="[0-9]{8}[A-Z]{1}"></input>
+    <br>
+    <label for="Nombre">Nombre</label>
+    <input type="text" name="poner_nombre" id="poner_nombre" size="20" autofocus></input>
+    <br>
+    <label for="Apellidos">Apellidos</label>
+    <input type="text" name="poner_apellido" id="poner_apellido" size="20" autofocus></input>
+    <br>
+    <label for="Teléfono">Teléfono</label>
+    <input type="number" name="poner_tlf" id="poner_tlf" size="20" maxlength="9" autofocus pattern="[0-9]{9}"></input>
+    <br><br>
+    <label for="hora">Elija una hora</label>
+    <input type="time" name="elegir_hora" id="elegir_hora">
+    <br>
+    <label for="color">Elija un color</label>
+    <input type="color" name="elegir_color" id="elegir_color">
+    </fieldset>
+    <fieldset>
+    <legend>Completar</legend>
+    <input type="radio" name="sistema" id="sistema" value="sistemawindows">
+    <label for="sistemawindows">Windows</label>
+    <br>
+    <input type="radio" name="sistema" id="sistema" value="sistemamac">
+    <label for="sistemamac">Mac</label>
+    <br>
+    <input type="radio" name="sistema" id="sistema" value="sistemalinux">
+    <label for="sistemalinux">Linux</label>
+    <br>
+    <select name="sistemasselect" id="sistemasselect">
+        <option value="Windows">Windows</option>
+        <option value="Mac">Mac</option>
+        <option value="Linux">Linux</option>
+    </select>
+    <br>
+    <label for="color2">Elija un color</label>
+    <input type="color" name="elegir_color2" id="elegir_color2">
+    <br>
+    <label for="fecha2">Elija una fecha:</label>
+    <input type="date" name="elegit_fecha2" id="elegir_fecha2">
+    <br>
+    <textarea name="areatxt" id="areatxt" rows="8" cols="59" placeholder="Inserte aquí el texto"></textarea>
+    <br>
+    <label for="Nombre">Nombre</label>
+    <input type="text" name="poner_nombre" id="poner_nombre" size="20" autofocus></input>
+    <label for="Apellidos">Apellidos</label>
+    <input type="text" name="poner_apellido" id="poner_apellido" size="20" autofocus></input>
+    <label for="Teléfono">Teléfono</label>
+    <input type="number" name="poner_tlf" id="poner_tlf" size="20" maxlength="9" autofocus pattern="[0-9]{9}"></input>
+    <br>
+    <input type="checkbox" name="idioma" id="idioma" value="idiomaespanol">
+    <label for="idiomaespanol">Español</label>
+    <input type="checkbox" name="idioma" id="idioma" value="idiomaingles">
+    <label for="idiomaingles">Inglés</label>
+    <input type="checkbox" name="idioma" id="idioma" value="idiomaaleman">
+    <label for="idiomaaleman">Alemán</label>
+    <input type="checkbox" name="idioma" id="idioma" value="idiomafrances">
+    <label for="idiomafrances">Francés</label>
+    <br>
+    <label for="archivo2">Elija un fichero:</label>
+    <input type="file" name="elegir_archivo2" id="elegir_archivo2">
+    <br>
+    <label for="hora2">Elija una hora</label>
+    <input type="time" name="elegir_hora2" id="elegir_hora2">
+    </fieldset>
+</body>
+</html>

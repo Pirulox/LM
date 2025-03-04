@@ -1,0 +1,21 @@
+header nav ul{
+    list-style-type: none;
+    display: flex; /*Esto hace que se comporte como una barra de navegación*/
+    margin: 0;
+    float: right;
+}
+header nav ul li{
+    padding: 15px;
+    font-size: 15px;
+    cursor: pointer;
+}
+header nav ul li button{
+    margin-left: auto;
+    background-color: transparent; 
+    border: 2px solid #666; 
+    border-radius: 6px; 
+    padding: 5px; 
+    font-size: 14px;
+    color: #333; 
+    cursor: pointer; 
+}

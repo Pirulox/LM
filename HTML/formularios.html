@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1 align="center"><u>Formularios</u></h1>
+    <form action="enlaceprueba1.html" method="post" autocomplete="on">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="Nombre" id="nombre" size="13" maxlength="9" value="Escriba su nombre" 
+        enabled required autofocus placeholder="Nombre" pattern="[0-9]{8}[A-Z]{1}"></input>
+                                         <!-- Del 0 al 9 los números que permitimos escribir y lo mismo con A-Z y las llaves
+                                        es la cantidad de esos números y letras, 8 números y 1 letra-->
+        <br>
+        <br>
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" name="pass" id="pass" size="20" maxlength="9" autofocus></input>
+        <input type="submit" value="Enviar formulario"></input>
+        <input type="reset" name="reseteo" id="reseteo" value="Borrar formulario">
+        <input type="button" name="boton" id="boton" value="Pulsa aquí">
+        <br>
+        <input type="checkbox" name="check" id="check" checked></input>
+        <label for="scales">Hola</label>
+        <br>
+        <input type="file"></input>
+        <br>
+        <br>
+        <label for="edad">Edad</label><input type="number" min="2" max="10" step="2"></input>
+        <br>
+        <br>
+        <label for="fecha">Fecha</label>
+        <input type="date">
+        <br>
+        <label for="hora">Introduce la hora bro</label>
+        <input type="time" name="hora1" id="hora1">
+        <label for="dia">Introduce el mes</label>
+        <input type="month" name="mes" id="mes">
+        <label for="dia">Introduce la semana</label>
+        <input type="week" name="semana" id="semana">
+        <br>
+        <input type="color" name="color" id="color">
+        <label for="colorin">Selecciona el color</label>
+        <br>
+        <input type="range" name="rango" id="rango" value="25" min="0">
+        <label for="valor">Selecciona el valor</label>
+        <br>
+        <button>Buenas tardes</button>
+        <br><br>
+        <label for="provincia">Selecciona la provincia</label>
+        <select name="provincia" id="provincia" multiple required size="2">
+            <option value="z">Zaragoza</option>
+            <option value="h">Huesca</option>
+            <option value="t">Teruel</option>
+        </select>
+        <br><br>
+    <label for="Comentario">Escribe un comentario</label>
+    <textarea name="comentario" id="comentario" style="resize: none;" placeholder="Escribe aqui tu comentario" maxlength="500"></textarea>
+    <br><br>
+    <select name="Comunidades" id="Comunidades">
+    <optgroup label ="Aragon">Aragon</label>   
+        <option value="z">Zaragoza</option>
+        <option value="h">Huesca</option>
+        <option value="t">Teruel</option>
+    </optgroup>
+    <optgroup label ="Cantabria">Cantabria</label>   
+        <option value="s">Santander</option>
+    </optgroup>
+    </select>
+    <br><br>
+    <fieldset>
+    <legend> Datos Personales</legend>
+    <input type="radio" name="sexo" id="sexo" value="Hombre">
+    <label for="Hombre">Hombre</label>
+    <input type="radio" name="sexo" id="sexo" value="Mujer">
+    <label for="Mujer">Mujer</label>
+    <input type="radio" name="sexo" id="sexo" value="No binario">
+    <label for="No binario">No binario</label>
+    <br><br>
+    <label for="Estado civil">Estado civil</label>
+    <input type="checkbox" name="estado" id="estado" value="Soltero">
+    <label for="Soltero">Soltero</label>
+    <input type="checkbox" name="casado" id="casado" value="Casado">
+    <label for="Casado">Casado</label>
+    </fieldset>
+    <br>
+    <label for="Gustos">Escribe tus gustos de ocio</label>
+    <input type="text" name="gustos" id="gustos" list="lista gustos">
+    <datalist id="lista gustos">
+        <option label="Deportes" value="Deportes"></option>
+        <option label="Teatro" value="Teatro"></option>
+        <option label="Cine" value="Cine"></option>
+        <option label="Leer" value="Leer"></option>
+    </datalist>
+    </form>
+</body>
+</html>
+<!-- Comentario-->

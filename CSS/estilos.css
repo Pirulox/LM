@@ -1,0 +1,179 @@
+h3{
+    color: rgb(49, 215, 110);
+}
+
+/* Voy a crear una clase llamado parrafo*/
+
+.parrafo{
+    color: rgb(88, 233, 88);
+}
+
+/*Voy a crear un identificador llamado identificador y relativa es la posicion
+que pone el navegador*/
+#identificador{
+    position: relative;
+    top: 200px;
+    color: rgb(81, 81, 233);
+}
+
+/*Esto solo se aplica a los parrafos que tengan la clase "parrafo"*/
+p.parrafo{
+    color: rgb(95, 208, 220);
+}
+
+ul{
+    color: blueviolet;
+}
+li{
+    color: brown;
+}
+
+/*Esto solo cambia el color de las ul que tengan la clase sangria*/
+ul.sangria{
+    color: chocolate;
+}
+/*Le estamos diciendo que las li de dentro de la ul llamada sangria cambien color*/
+ul.sangria li{
+    color: red;
+}
+
+/*Cuando es absolute tiene punto de referencia en donde esté metido, 
+esquina superior izquierda por defecto y se cuenta con los pixeles desde ahi*/
+#intro{
+    color: red;
+    position:absolute;
+    top:100px;
+    left:500px;
+    /*Para cambiar tamaño de letra*/
+    font-size: 50px;
+    /*Para cambiar el tipo de letra, puedes poner varias por si la primera no*/
+    /*la encuentra y asi poder tener varias alternativas y si tienen espacio*/
+    /*hay que ponerlas con comillas simples*/
+    font-family:Impact, Arial, 'Times New Roman';
+    /*Para cambiar el estilo de la letra, por ejemplo, italica es decir cursiva*/
+    font-style:italic;
+    /*Negrita*/
+    font-weight:bold;
+    /*Se puede poner lo que son las etiquetas de font en la misma linea*/
+    /*font: italic bold Impact;*/
+}
+
+#primero{
+    position:absolute;
+    top:700px;
+    left:500px;
+}
+
+/*Estilo de un div*/
+#caja{
+    position: absolute;
+    top: 50px;
+    left: 300px;
+}
+/*El fixed fija el elemento durante toda la pagina*/
+.imagen{
+    position: fixed;
+}
+span.caja1{
+    position: relative;
+    top: 200px;
+    left: 400px;
+}
+body{
+    /*esto da el color de fondo*/
+    background-color:beige;
+    /*esto para poner imagenes*/
+    /*background-image:url(/HTML/Imagenes/patatas.jpg);*/
+    /*Controlar las repeticiones*/
+    /*no-repeat (no repite)*/
+    /*repeat-x solo repite en el eje x, 
+    y si fuera y solo se repetiria en el eje y*/
+    background-repeat:no-repeat;
+    /*La imagen cubre toda la ventana, 1 sola imagen (cover)*/
+    background-size: cover;
+    /*fijamos la imagen en toda la pantalla*/
+    background-attachment:fixed;
+    /*posicionamos la img en el medio para que al menos no se pierda tanta img*/
+    background-position: center;
+}
+
+.navidad{
+    position: absolute;
+    top: 0px;
+    left: 300px;
+    font-size: 30px;
+    color: red;
+    font-family: "navidad";
+    /*border-style: solid, dashed, dotted, double;*/
+    /*border-style: double;
+    border-width: 10px;*/
+    /*border-color: rgb(51, 92, 51);*/
+    border: double 10px rgb(51, 92, 51);
+    padding: 0px 20px 0px 20px;
+    /*En vez de poner padding right/left etc pones un padding y pones los números
+    en sentido de las agujas del reloj*/
+    border-radius: 10px;
+}
+
+@font-face{
+    font-family: "navidad";
+    src: url(CHRISTMAS_COMEBACK.otf);
+}
+
+#circulo{
+    position: absolute;
+    top: 10px;
+    left: 700px;
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.lista_general{
+    position: absolute;
+    top: 300px;
+    left: 20px;
+}
+.lista_general li{
+    float: left;
+    width: 150px;
+    /*Para quitar el circulo de la lista*/
+    list-style-type: none;
+    font-family: 20px;
+    background-color: rgb(115, 12, 12);
+    color: white;
+    font-weight: bold;
+    border: solid red 4px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+}
+.lista_general li:hover{    /*hover significa que cambiará cuando pongas el ratón encima*/
+    background-color: green;
+    color: blue;
+    border: double brown 4px;
+}
+
+/*Antes no iba porque lista_general estaba puesto como id y hay que ponerle como class entonces hay que cambiar el # por un .
+en el css y asi el especial que sigue estando en id ya funciona correctamente al poner el ratón encima, se pone class porque
+lista_general es más general entonces se pone class y especial es más específico entonces se pone id*/
+#especial:hover{
+    background-color: yellow;
+    color: violet;
+}
+
+.imagen:hover{
+    /*Dos formas de ocultar elementos y volver a verlos*/
+    display: none;
+    /*visibility: hidden;   El visibility lo transparenta, y el display lo elimina directamente*/
+}
+
+/*RESPONSIVE*/
+@media screen and (max-width: 800px) {
+    .lista_general li {
+        float: none;
+        background-color: green;
+        color: white;
+        font-weight: bold;
+    }
+}

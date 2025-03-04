@@ -1,0 +1,70 @@
+body{
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    /*Estas dos instrucciones pueden compilarse en una sola
+    font: 24px Arial;*/
+    background-color: #999999;
+}
+
+section{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-flow: row;
+    height: 600px;
+}
+
+article{
+    margin: 4px; /*Margen*/
+    padding: 5px;  /*Buscar la definición exacta pero creo que es como el
+    espacio que hay entre el borde más cercano y el article*/
+    background-color: #dddd88;
+    border-radius: 7px; /*Es como la "redondez" de los bordes del article, 
+    cuanto más pixeles, más redondo será ese espacio del article*/ 
+    border: 1px solid #cccc33;
+    order: 2; /*Buscar la definición exacta pero creo que es el orden en el
+    que se agrupan a la hora de moverse*/
+    /*Esta marca describe 3 cosas
+    flex-grow:3 significa el factor de crecimiento
+    flex-shrink: Al contrario 
+    flex-basis: Define el tamaño por defecto*/
+    flex: 2 1 60%;
+}
+nav{
+    margin: 4px;
+    padding: 5px;
+    background-color: #ccccff;
+    order: 1;
+    border: 1px solid #8888bb; /*Buscar la definición exacta de solid*/ 
+    border-radius: 7px;
+    flex: 1 0 20%  /*El porcentaje, es la proporción que ocupará de la pantalla*/
+}
+aside{
+    margin: 4px;
+    padding: 5px;
+    background-color: #ccccff;
+    order: 3;
+    border: 1px solid #8888bb;
+    border-radius: 7px;
+    flex: 2 6 20%;
+}
+
+header, footer{
+    display: block; /*display: block: ocupar el bloque*/
+    margin: 4px;
+    background-color: #ffeebb;
+    border-radius: 7px;
+    padding: 5px;
+    border: 1px solid #eebb55;
+}
+
+@media all and (max-width: 640px){
+    section{
+        flex-flow: column; /*El column básicamente le dice como se tiene que
+        organizar todo cuando el ancho sea 640px*/
+    }
+    section>nav, section>aside, header,footer{
+        min-height: 50px;   /*Buscar que significa todo esto*/
+        max-height: 50px;
+    }
+}

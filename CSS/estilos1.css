@@ -1,0 +1,63 @@
+.lista1 li img{
+    width: 100px;
+    height: 100px;
+    float:left;
+    padding-right: 10px;
+    flex-grow: 1;
+
+    /*border-radius: 8px;
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 0px 30px #000;*/
+}
+
+.lista1{
+    height: 500px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*flex-flow:row-wrap-reverse;  metes las dos en una misma órden*/
+    justify-content: flex-start;
+    /*Simplemente funciona en modo multilinea (wrap)*/
+    /*align-content: flex-end;
+    align-items: flex-end;*/
+
+    /*display: grid; Display: Define un contenedor como una cuadrícula (grid). 
+    Grid: los elementos hijos se organizan auto en filas y columnas según las reglas definidas.
+
+    grid-template-columns:  grid-template-colums: Define cómo se distribuyen las columnas en la cuadrícula
+        repeat(auto-fit,minmax(150px,1fr));   repeat(auto-fit) : Repite el patrón de columnas tantas veces como sea posible dentro del espacio disponible.
+        auto-fit: Ajusta automáticamente el número de columnas según el ancho del contenedor. Las columnas se expanden o colapsan dependiendo del espacio disponible.
+        minmax(150px,1fr) : Define un rango para el ancho de las columnas
+        150px : El ancho mínimo de una columna será de 150 píxeles 
+        1fr : El ancho máximo será una fracción del espacio restante, distribuyendo equitativamente el espacio disponible entre las columnas.
+        Esto significa que las columnas tendrán al menos 150px de ancho, pero podrán expandirse para llenar el contenedor si hay más espacio disponible.
+    gap: 32px;  gap : Define el espacio (margen interno) entre las filas y columnas de la cuadrícula      
+                32px : El espacio entre cada fila y columna será de 32 píxeles
+    */    
+}
+
+#foto1{
+    align-self: center;
+    /*Indica el factor de crecimiento con respecto a los otros*/
+    flex-grow: 3;
+    /*A número mayor mas tanaño*/
+    /*flex-shrink: 1;/*
+    /*Al revés, mayor numero menor tamaño*/
+    order: 4;                                                                                                                                                                                                                                                                               
+}
+.lista1 li{
+    flex-grow: 1;
+    flex-basis: 200px;
+    /*flex-shrink: 3;*/
+}
+
+
+/*@media screen and (max-width: 900px){
+    .lista1 li img{
+        float: none;
+        padding-bottom: 10px;
+    }
+}
+*/
