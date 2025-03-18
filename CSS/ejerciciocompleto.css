@@ -33,9 +33,11 @@ section article{
 }
 
 #desplega{
-    flex: 3 1 200px;
+    flex: 3 1 200px; /*[flex-grow] [flex-shrink] [flex-basis];*/
     display: flex;
-    flex-flow: column;
+    flex-flow: column; /*Es un atajo para flex-direction y flex-wrap:
+    flex-direction: column; → Los elementos internos se colocarán en columna (uno debajo del otro) en lugar de en fila.
+    flex-wrap: nowrap; (valor por defecto) → No se dividirán en múltiples líneas, sino que se ajustarán dentro del contenedor.*/
 }
 
 #uno{
