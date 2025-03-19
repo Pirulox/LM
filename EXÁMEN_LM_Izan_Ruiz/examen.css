@@ -1,0 +1,174 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(/EXÁMEN_LM_Izan_Ruiz/Fondo1.jpg);
+}
+
+.contenedor_principal{
+    margin: auto;
+    max-height: 800px;
+}
+
+header nav ul li{
+    list-style-type: none; 
+    float: right; 
+    padding: 15px;
+    padding-top: 45px;
+    font-size: 15px;
+    cursor: pointer;
+    color: white;
+}
+header nav ul li:hover{
+    color: yellow;
+    text-decoration: underline 3px;
+}
+
+#logo{
+    float: left;
+    padding-top: 20px;
+    padding-left: 15px;
+    max-width: 300px;
+}
+#imagen_logo{
+    transition-property: img-size;
+    transition-duration: 5s;
+}
+
+.texto1{
+    color: white;
+    padding-top: 150px;
+    padding-right: 150px;
+    padding-left: 150px;
+    text-align: center;
+}
+.texto1 h1{
+    font-family: 'Cascadia Code';
+    padding: 10px;
+    justify-content: center;
+}
+.texto2{
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    text-align: center;
+    background-color: rgb(166, 13, 13);
+    max-width: 800px;
+    max-height: 700px;
+    color: white;
+    order: 1;
+    flex: 1 0 50%;
+}
+.texto3{
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    text-align: center;
+    background-color: rgb(205, 205, 156);
+    order: 2;
+    flex: 2 1 50%;
+    color: red;
+}
+.texto4{
+    display: flex;
+    flex-direction: column;
+    padding-top: 250px;
+    padding-right: 250px;
+    padding-left: 250px;
+    text-align: center;
+    color: white;
+    order: 3;
+    flex: 3 1 100%;
+}
+.texto4 button{
+    margin: center;
+    background-color: transparent; 
+    border: 2px solid white; 
+    padding-right: 10px;
+    padding: 10px;
+    padding-left: 20px;
+    color: white; 
+    cursor: pointer; 
+}
+.texto4 button:hover{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 100px;
+    background-color: aqua;
+    color: rgb(6, 6, 213);
+}
+.texto5{
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    text-align: center;
+    background-color: rgb(205, 205, 156);
+    max-width: 800px;
+    max-height: 700px;
+    color: red;
+    order: 4;
+    flex: 1 0 50%;
+}
+.texto6{
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    text-align: center;
+    background-color: rgb(166, 13, 13);
+    max-width: 800px;
+    max-height: 700px;
+    color: white;
+    order: 5;
+    flex: 1 0 50%;
+}
+
+#transicion{
+    animation-duration: 30s;
+    animation-name: slidein;   
+    margin-left: 0%;
+}
+@keyframes slidein {
+    from {
+        margin-left: -80%;
+    }
+    25%{
+        margin-left: 70%;
+    }
+    50%{
+        margin-left:-80%;
+    }
+    75%{
+        margin-left: 75%;
+    }
+    to {
+        margin-left: -80%;
+    }
+}
+
+@media all and (max-width: 640px){
+    .texto1{
+        max-width: max-content;
+    }
+    .texto2{
+        max-width: max-content;
+    }
+    .texto3{
+        max-width: max-content;
+    }
+    .texto4{
+        max-width: max-content;
+    }
+    .texto5{
+        max-width: max-content;
+    }
+    .texto6{
+        max-width: max-content;
+    }
+}
