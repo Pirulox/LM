@@ -1,3 +1,7 @@
+*{/*Con esto quitamos los trozos blancos que sobran*/
+    margin: 0;
+    padding: 0;
+}
 body{
     display: grid; /*Con esto le decimos que toda la pagina sea grid y afecten los
     cambios de grid a toda la página*/
@@ -10,11 +14,70 @@ body{
     ejercicio, ponemos 14 porque cada fila OCUPA 80px*/
     width: 100%;/*Que el grid ocupe el 100% del ancho de la página*/
 }
-
+#logo{
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 150px;
+    height: 50px;
+    transition-property: height, width;/*Con esto le decimos lo que queremos cambiar*/
+    transition-duration: 5s;
+}
+#logo:hover{/*Con esto le decimos que cuando se pase el ratón encima cambie hasta que
+    obtenga esos valores*/
+    width: 250px;
+    height: 100px;
+}
+#parrafo1{
+    font-size: 25px;
+    font-family: 'Cascadia Code PL';
+    font-weight: bold;/*Negrita*/
+    animation-duration: 10s;
+    animation-name: movimiento;
+    animation-iteration-count: infinite; /*Con esto la animación es infinita*/
+}
+#parrafo2{
+    margin: auto;
+    width: 400px;
+}
+@keyframes movimiento{
+    from{
+        margin-left: 0%;
+    }
+    50%{
+        margin-left: 85%;
+    }
+    to{
+        margin-left: 0%;
+    }
+}
+p{
+    color: white;
+}
+.item1 ul{
+    list-style-type: none;
+    color: white;
+    float: right;/*Que se ponga a la derecha*/
+    margin-top: 10px;
+}
+.item1 ul li{
+    float: left;
+    width: 100px;
+}
+.item1 ul li:hover{
+    float: left;/*Que se ponga de izquierda a derecha*/
+    width: 100px;
+    color: yellow;
+    text-decoration: underline;
+    font-weight: bold;
+    cursor: pointer;
+}
 .item1{
     grid-row: 1/5;/*Con esto le decimos que ocupe de la fila 1 a la 5*/
     grid-column: 1/3;/*Lo mismo pero con columnas, este es el apartado de la foto*/
-    background-color: black;
+    background-image: url(../EXÁMEN_LM_Izan_Ruiz/Fondo1.jpg);
+    background-size: cover;/*Cover ajusta al tamaño que hay*/
+    background-attachment: absolute;/*Posición absoluta*/
+    background-position: center;/*Ajusta la posición al centro*/
 }
 .item2{
     grid-row: 5/9;
