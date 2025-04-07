@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../BOOTSTRAP/css/bootstrap.min.css">
+    <!--Referencia a la hoja de estilos de bootstrap-->
+    <link rel="stylesheet" href="../CSS/prueba_bootstrap.css"> <!--Referencia a la hoja de estilos de mi css-->
+    <title>Prueba Bootstrap 02-04</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- Contenedor principal de Bootstrap es el cotainer y luego el fluid  es para que ocupe toda la pantalla -->
+        <div class="row">
+            <div class="col-lg-4 columna1"> <!-- Columna 1 tamaño sobre 12 -->
+                <h1>Columna 1</h1>
+                <p>Contenido de la columna 1</p>
+            </div>
+            <div class="col-lg-5  columna2"> <!-- Columna 2 tamaño sobre 12 -->
+                <h1>Columna 2</h1>
+                <p>Contenido de la columna 2</p>
+            </div>
+            <div class="col-xl-3 columna3"> <!-- Columna 3 tamaño sobre 12 -->
+                <h1>Columna 3</h1>
+                <p>Contenido de la columna 3</p>
+            </div>
+        </div>
+        <br>
+        <div class="row align-items-center justify-content-end fila2"> <!--start arriba center centrado end abajo-->
+            <!-- justify-content-end empiezan al final, el self lo vamos a utilzar para cada columna--->
+            <div class="col-lg-4 align-self-start columna1"> <!-- Columna 1 tamaño sobre 12 -->
+                <!-- align-self-start alinea a la izquierda, el self lo vamos a utilzar para cada columna--->
+                <h1>Columna 1</h1>
+                <p>Contenido de la columna 1</p>
+            </div>
+            <div class="col-lg-3 align-self-end columna2"> <!-- Columna 2 tamaño sobre 12 -->
+                <h1>Columna 2</h1>
+                <p>Contenido de la columna 2</p>
+            </div>
+            <div class="col-xl-3 columna3"> <!-- Columna 3 tamaño sobre 12 -->
+                <h1>Columna 3</h1>
+                <p>Contenido de la columna 3</p>
+            </div>
+        </div>
+
+        <br>
+        <div class="row fila3"> <!--start arriba center centrado end abajo-->
+            <!-- justify-content-end empiezan al final, el self lo vamos a utilzar para cada columna--->
+            <div class="col-lg-6 columna1"> <!-- Columna 1 tamaño sobre 12 -->
+                <!-- align-self-start alinea a la izquierda, el self lo vamos a utilzar para cada columna--->
+                <h1>Columna 1</h1>
+                <p>Contenido de la columna 1</p>
+            </div>
+            <div class="col-lg-6 columna2"> <!-- Columna 2 tamaño sobre 12 -->
+                <h1>Columna 2</h1>
+                <p>Contenido de la columna 2</p>
+                <div class="row">
+                    <div class="col-lg-6 columna3">
+                        <h2>Columna 3</h2>
+                        <p>Contenido de la columna 3</p>
+                    </div>
+                    <div class="col-lg-6 columna3">
+                        <h2>Columna 4</h2>
+                        <p>Contenido de la columna 4</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <br>
+
+        <div class="row fila2">
+            <div class="col-lg-4 columna1">
+                <H1>Columna 1</H1>
+                <p>Esto es un prueba de Bootstrap</p>
+            </div>
+            <!--Offset desplazamiento le pones cuando se va a lg xl y cuandos huecos se desplaza-->
+            <div class="col-lg-1 offset-lg-2 columna2">
+                <H1>Columna 2</H1>
+                <p>Esto es un prueba de Bootstrap</p>
+            </div>
+            <div class="col-xl-1 offset-lg-2 columna3">
+                <H1>Columna 3</H1>
+                <p>Esto es un prueba de Bootstrap</p>
+            </div>
+            <br> <br>
+           
+        </div>
+        <br> <br>
+        <table class="table table-dark table-striped table-bordered table-hover"> <!-- table-dark modo oscuro, table-striped modo con rayas, table-bordered modo con bordes, table-hover modo hover-->
+            <thead class="table-light">
+                <tr>
+                   <th>titulo1</th>
+                    <th>titulo2</th>
+                    <th>titulo3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="table-danger">
+                    <td>contenido1</td>
+                    <td>contenido2</td>
+                    <td>contenido3</td>
+                </tr>
+                <tr class="table-success">
+                    <td>contenido4</td>
+                    <td>contenido5</td>
+                    <td>contenido6</td>
+                </tr>
+                <tr>
+                    <td>contenido7</td>
+                    <td>contenido8</td>
+                    <td>contenido9</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br> <br>
+        <table class="table table-resposive"> <!-- table-dark modo oscuro, table-striped modo con rayas, table-bordered modo con bordes, table-hover modo hover-->
+            <thead class="table-light">
+                <tr>
+                   <th>titulo1</th>
+                    <th>titulo2</th>
+                    <th>titulo3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="table-danger">
+                    <td>contenido1</td>
+                    <td>contenido2</td>
+                    <td>contenido3</td>
+                </tr>
+                <tr class="table-success">
+                    <td>contenido4 contenido4 contenido4 contenido4 contenido4 contenido4 contenido4 contenido4</td>
+                    <td>contenido5 contenido4 contenido4 contenido4 contenido4 contenido4 contenido4 contenido4</td>s
+                    <td>contenido6 contenido4 contenido4 contenido4 contenido4 contenido4</td>
+                </tr>
+                <tr>
+                    <td>contenido7</td>
+                    <td>contenido8</td>
+                    <td>contenido9</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>
